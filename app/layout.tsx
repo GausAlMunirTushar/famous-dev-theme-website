@@ -2,7 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
-import "./globals.css"
+import "../styles/globals.css"
 
 const geist = Geist({ subsets: ["latin"] })
 const geistMono = Geist_Mono({ subsets: ["latin"] })
@@ -37,15 +37,10 @@ export const metadata: Metadata = {
       {
         url: "/icon-dark-32x32.png",
         media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
+      }
     ],
     apple: "/apple-icon.png",
   },
-    generator: 'v0.app'
 }
 
 export default function RootLayout({

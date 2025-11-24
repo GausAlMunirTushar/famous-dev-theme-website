@@ -54,16 +54,16 @@ export function Header() {
         {/* Right side actions */}
         <div className="flex items-center gap-4">
           <Button
-            variant="ghost"
+            variant="link"
             size="icon"
             onClick={toggleTheme}
             aria-label="Toggle theme"
-            className="hidden sm:inline-flex"
+            className="hidden sm:inline-flex cursor-pointer"
           >
             {theme === "light" ? <Moon className="w-4 h-4" /> : <Sun className="w-4 h-4" />}
           </Button>
 
-          <Button variant="ghost" size="icon" asChild className="hidden sm:inline-flex">
+          <Button variant="link" size="icon" asChild className="hidden sm:inline-flex">
             <Link href="https://github.com/GausAlMunirTushar/famous-dev-theme" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <Github className="w-4 h-4" />
             </Link>
@@ -90,7 +90,7 @@ export function Header() {
               Changelog
             </Link>
             <div className="flex gap-2 pt-2">
-              <Button variant="ghost" size="sm" onClick={toggleTheme} className="w-full">
+              <Button variant="default" size="sm" onClick={toggleTheme} className="w-full">
                 {theme === "light" ? "Dark Mode" : "Light Mode"}
               </Button>
             </div>

@@ -57,12 +57,12 @@ export function HeroSection() {
           </div>
         </motion.div>
 
-        <motion.div variants={itemVariants} className="mb-6 flex items-center justify-center gap-4">
+        <motion.div variants={itemVariants} className="mb-6 flex flex-col items-center justify-center gap-4">
           <Image src="/logo.png" alt="Famous Dev" width={48} height={48} className="w-12 h-12" />
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-balance">
-            Beautiful Code, <br />
+            Beautiful Theme <br />
             <span className="bg-gradient-to-r from-red-500 via-red-600 to-orange-500 bg-clip-text text-transparent">
-              Beautiful Theme
+              Beautiful Code
             </span>
           </h1>
         </motion.div>
