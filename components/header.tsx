@@ -35,7 +35,7 @@ export function Header() {
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 font-bold text-lg hover:opacity-80 transition-opacity">
           <Image src="/logo.png" alt="Famous Dev Logo" width={32} height={32} className="w-8 h-8" priority />
-          <span className="hidden sm:inline">Famous Dev</span>
+          <span className="hidden sm:inline">Famous Dev Theme</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -64,9 +64,9 @@ export function Header() {
           </Button>
 
           <Button variant="ghost" size="icon" asChild className="hidden sm:inline-flex">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <Link href="https://github.com/GausAlMunirTushar/famous-dev-theme" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <Github className="w-4 h-4" />
-            </a>
+            </Link>
           </Button>
 
           {/* Mobile menu button */}
