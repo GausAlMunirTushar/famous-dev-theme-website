@@ -61,7 +61,7 @@ export function HeroSection() {
         <motion.div variants={itemVariants} className="mb-6 flex flex-col items-center justify-center gap-4">
           <Image src="/logo.png" alt="Famous Dev" width={48} height={48} className="w-12 h-12" />
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-balance">
-            Beautiful Theme <br />
+            Beautiful VSCode Theme <br />
             <span className="bg-gradient-to-r from-red-500 via-red-600 to-orange-500 bg-clip-text text-transparent">
               Beautiful Code
             </span>
@@ -101,7 +101,7 @@ export function HeroSection() {
         </motion.div>
 
         {/* Installation command */}
-        <motion.div variants={itemVariants} className="mb-20">
+        {/* <motion.div variants={itemVariants} className="mb-20">
           <div className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border bg-card/50 backdrop-blur-sm hover:bg-card/80 transition-colors cursor-pointer group">
             <code className="font-mono text-sm text-muted-foreground group-hover:text-foreground transition-colors">
               code-theme install famous-dev
@@ -118,7 +118,7 @@ export function HeroSection() {
               )}
             </button>
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* Feature highlight */}
         <motion.div variants={itemVariants} className="grid grid-cols-1 md:grid-cols-3 gap-6">

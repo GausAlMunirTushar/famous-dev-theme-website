@@ -9,7 +9,7 @@ const geistMono = Geist_Mono({ subsets: ["latin"] })
 
 // Updated metadata for Famous Dev Theme website
 export const metadata: Metadata = {
-  title: "Famous Dev Theme - Premium VS Code Color Scheme",
+  title: "Famous Dev Theme - Premium VSCode Theme",
   description:
     "A modern, developer-centric VS Code theme with stunning color variants. Built with Framer Motion animations and crafted for developers who love beautiful code.",
   keywords: ["VS Code", "theme", "color scheme", "developer tools", "extension"],
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://famousdev.com",
+    url: "https://famous-dev-theme.vercel.app",
     siteName: "Famous Dev Theme",
     title: "Famous Dev Theme - Premium VS Code Color Scheme",
     description: "A modern, developer-centric VS Code theme with stunning color variants.",

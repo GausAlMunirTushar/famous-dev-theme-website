@@ -18,7 +18,7 @@ export function FeaturesSection() {
     {
       icon: Code2,
       title: "Language Support",
-      description: "Syntax highlighting for 100+ programming languages and file types.",
+      description: "Syntax highlighting for 10+ programming languages and file types.",
     },
     {
       icon: Moon,

@@ -74,7 +74,7 @@ export function Footer() {
             <h4 className="font-semibold text-sm mb-4">Connect</h4>
             <div className="flex gap-4">
               <Link
-                href="https://github.com"
+                href="https://github.com/GausAlMunirTushar/famous-dev-theme"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
@@ -83,7 +83,7 @@ export function Footer() {
                 <span className="sr-only">GitHub</span>
               </Link>
               <Link
-                href="https://twitter.com"
+                href="https://twitter.com/gausalmunir"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
@@ -92,7 +92,7 @@ export function Footer() {
                 <span className="sr-only">Twitter</span>
               </Link>
               <Link
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/gausalmunirtushar"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
