@@ -2,18 +2,22 @@
 
 import Link from "next/link"
 import { Github, Twitter, Linkedin } from "lucide-react"
+import Image from "next/image"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
     <footer className="border-t border-border bg-muted/50">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-12 pb-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Famous Dev</h3>
-            <p className="text-sm text-muted-foreground">
+            <Link href="/" className="flex items-center gap-2 font-bold text-lg hover:opacity-80 transition-opacity">
+              <Image src="/logo.png" alt="Famous Dev Logo" width={32} height={32} className="w-8 h-8" priority />
+              <span className="hidden sm:inline">Famous Dev Theme</span>
+            </Link>
+            <p className="text-sm text-muted-foreground mt-3">
               Premium VS Code theme crafted for developers who love beautiful code.
             </p>
           </div>
@@ -23,12 +27,12 @@ export function Footer() {
             <h4 className="font-semibold text-sm mb-4">Product</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/preview" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link href="https://marketplace.visualstudio.com/items?itemName=GausAlMunirTushar.famous-dev-theme" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Preview
                 </Link>
               </li>
               <li>
-                <Link href="/themes" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Themes
                 </Link>
               </li>
@@ -69,7 +73,7 @@ export function Footer() {
           <div>
             <h4 className="font-semibold text-sm mb-4">Connect</h4>
             <div className="flex gap-4">
-              <a
+              <Link
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -77,8 +81,8 @@ export function Footer() {
               >
                 <Github className="w-5 h-5" />
                 <span className="sr-only">GitHub</span>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -86,8 +90,8 @@ export function Footer() {
               >
                 <Twitter className="w-5 h-5" />
                 <span className="sr-only">Twitter</span>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -95,13 +99,13 @@ export function Footer() {
               >
                 <Linkedin className="w-5 h-5" />
                 <span className="sr-only">LinkedIn</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-border pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
+        <div className="border-t border-border pt-4 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
           <p>&copy; {currentYear} Famous Dev. All rights reserved.</p>
           <div className="flex gap-4">
             <Link href="#" className="hover:text-foreground transition-colors">

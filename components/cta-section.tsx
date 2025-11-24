@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 export function CTASection() {
   return (
@@ -44,13 +45,13 @@ export function CTASection() {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white group" asChild>
-                <a href="/preview">
+                <Link href="https://marketplace.visualstudio.com/items?itemName=GausAlMunirTushar.famous-dev-theme">
                   Get Started
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </a>
+                </Link>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <a href="/docs">Read Documentation</a>
+                <Link href="/docs">Read Documentation</Link>
               </Button>
             </motion.div>
           </div>

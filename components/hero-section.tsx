@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, Github, Copy, Check } from "lucide-react"
 import { useState } from "react"
 import Image from "next/image"
+import Link from "next/link"
 
 export function HeroSection() {
   const [copied, setCopied] = useState(false)
@@ -86,16 +87,16 @@ export function HeroSection() {
 
         <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
           <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white group" asChild>
-            <a href="/preview">
+            <Link href="https://marketplace.visualstudio.com/items?itemName=GausAlMunirTushar.famous-dev-theme" target="_blank">
               Preview Theme
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </a>
+            </Link>
           </Button>
           <Button variant="outline" size="lg" asChild>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://github.com/GausAlMunirTushar/famous-dev-theme" target="_blank" rel="noopener noreferrer">
               <Github className="mr-2 w-4 h-4" />
               View on GitHub
-            </a>
+            </Link>
           </Button>
         </motion.div>
 
